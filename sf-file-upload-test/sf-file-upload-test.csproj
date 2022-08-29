@@ -8,4 +8,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'sf-file-upload-test' " />
+  <ItemGroup>
+    <None Remove="Syncfusion.Blazor.Inputs" />
+    <None Remove="Syncfusion.Blazor.Themes" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Blazor.Inputs" Version="20.2.0.44" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.44" />
+  </ItemGroup>
 </Project>
